@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green: #2e7d32;
+  --cream: #f4f4f4;
+  --accent: #e74c3c;
+  --muted: #888;
+  --white: #fff;
+  --border: #ddd;
+  --border-dash: #ccc;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: var(--cream);
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--green);
+  padding: 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-size: 1.6rem;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+}
+
+.tab-btn {
+  font-family: inherit;
+  font-size: 1rem;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.tab-btn:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+}
+
+.tab-btn.active {
+  border-bottom-color: var(--accent);
+}
+
+#content {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero img {
+  width: min(100%, 480px);
+  border-radius: 14px;
+  margin-bottom: 28px;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.hero .tagline {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 32px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.info-box {
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px 28px;
+  min-width: 220px;
+}
+
+.info-box h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.info-box p {
+  line-height: 1.5;
+}
+
+.menu-section {
+  margin-bottom: 40px;
+}
+
+.menu-section h2 {
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.menu-item + .menu-item {
+  border-top: 1px dashed var(--border-dash);
+}
+
+.menu-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.menu-item p {
+  font-size: 0.92rem;
+}
+
+.price {
+  white-space: nowrap;
+}
+
+.about h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.about p {
+  line-height: 1.7;
+  margin-bottom: 16px;
+  max-width: 64ch;
+}
+
+.contact-list {
+  list-style: none;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-list strong {
+  margin-right: 8px;
+}
